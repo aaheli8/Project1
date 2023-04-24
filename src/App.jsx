@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Expenses from './components/EXPENSES/Expenses'
-
+import NewExpenses from './components/NewExpenses/NewExpenses'
 function App() {
   const expenses = [
     {
@@ -29,8 +29,9 @@ function App() {
 
   return (
     <div>
+      <NewExpenses/>
       <Expenses items={expenses}/>
-      </div>
+    </div>
   );
 }
 
